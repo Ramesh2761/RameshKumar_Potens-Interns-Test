@@ -1,0 +1,11 @@
+def find3Num(Arr, arr_size, sum):
+    for i in range( 0, arr_size-2):
+        for j in range(i + 1, arr_size-1): 
+            for k in range(j + 1, arr_size):
+                if Arr[i] + Arr[j] + Arr[k] == sum:
+                    print("Result is", Arr[i]," ", Arr[j], " ", Arr[k])
+
+Arr = [1, 2, 6, 9, 3]
+sum = 13
+arr_size = len(Arr)
+find3Num(Arr, arr_size, sum)
